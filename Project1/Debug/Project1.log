@@ -1,0 +1,48 @@
+﻿  EmbeddedSystemX.cpp
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(6,38): error C2061: syntax error: identifier 'EmbeddedSystemX'
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(7,45): error C2061: syntax error: identifier 'EmbeddedSystemX'
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(8,41): error C2061: syntax error: identifier 'EmbeddedSystemX'
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(9,35): error C2061: syntax error: identifier 'EmbeddedSystemX'
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(10,41): error C2061: syntax error: identifier 'EmbeddedSystemX'
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(11,40): error C2061: syntax error: identifier 'EmbeddedSystemX'
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(12,49): error C2061: syntax error: identifier 'EmbeddedSystemX'
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(13,36): error C2061: syntax error: identifier 'EmbeddedSystemX'
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(14,35): error C2061: syntax error: identifier 'EmbeddedSystemX'
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(15,38): error C2061: syntax error: identifier 'EmbeddedSystemX'
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(16,37): error C2061: syntax error: identifier 'EmbeddedSystemX'
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(19,34): error C2061: syntax error: identifier 'EmbeddedSystemX'
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.cpp(11,22): error C2660: 'StateInterface::Restart': function does not take 1 arguments
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(6,15): message : see declaration of 'StateInterface::Restart'
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.cpp(16,29): error C2660: 'StateInterface::SelfTestFailed': function does not take 1 arguments
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(7,15): message : see declaration of 'StateInterface::SelfTestFailed'
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.cpp(21,25): error C2660: 'StateInterface::SelftestOk': function does not take 1 arguments
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(8,15): message : see declaration of 'StateInterface::SelftestOk'
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.cpp(26,19): error C2660: 'StateInterface::Exit': function does not take 1 arguments
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(9,15): message : see declaration of 'StateInterface::Exit'
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.cpp(31,25): error C2660: 'StateInterface::Initalized': function does not take 1 arguments
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(10,15): message : see declaration of 'StateInterface::Initalized'
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.cpp(36,24): error C2660: 'StateInterface::Configure': function does not take 1 arguments
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(11,15): message : see declaration of 'StateInterface::Configure'
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.cpp(41,33): error C2660: 'StateInterface::ConfigurationEnded': function does not take 1 arguments
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(12,15): message : see declaration of 'StateInterface::ConfigurationEnded'
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.cpp(46,20): error C2660: 'StateInterface::Start': function does not take 1 arguments
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(13,15): message : see declaration of 'StateInterface::Start'
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.cpp(51,19): error C2660: 'StateInterface::Stop': function does not take 1 arguments
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(14,15): message : see declaration of 'StateInterface::Stop'
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.cpp(56,22): error C2660: 'StateInterface::Suspend': function does not take 1 arguments
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(15,15): message : see declaration of 'StateInterface::Suspend'
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.cpp(61,21): error C2660: 'StateInterface::Resume': function does not take 1 arguments
+  PowerOnSelfTest.cpp
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.h(16,15): message : see declaration of 'StateInterface::Resume'
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.h(6,16): error C2143: syntax error: missing ';' before '*'
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.h(6,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.h(6,31): error C2238: unexpected token(s) preceding ';'
+  StateInterface.cpp
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.h(21,33): error C2061: syntax error: identifier 'StateInterface'
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.h(6,16): error C2143: syntax error: missing ';' before '*'
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.h(6,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.h(6,31): error C2238: unexpected token(s) preceding ';'
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.h(21,33): error C2061: syntax error: identifier 'StateInterface'
+C:\Users\valer\source\repos\Project1\Project1\StateInterface.cpp(5,31): error C2660: 'EmbeddedSystemX::ChangeState': function does not take 1 arguments
+  Generating Code...
+C:\Users\valer\source\repos\Project1\Project1\EmbeddedSystemX.h(21,7): message : see declaration of 'EmbeddedSystemX::ChangeState'

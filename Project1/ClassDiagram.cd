@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="EmbeddedSystemX">
+    <Position X="4" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAIBAAAAABACAAAAAAgAWAAIAAAAQgAAAA=</HashCode>
+      <FileName>EmbeddedSystemX.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_state" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="StateInterface">
+    <Position X="8.25" Y="0.5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAIBAAAAABAAAAAAAAgASAAIAAAAQgAAAA=</HashCode>
+      <FileName>StateInterface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PowerOnSelfTest">
+    <Position X="9" Y="4.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAIAAAAAAAAAAAAAAAAQAAQAAAAQAAAAA=</HashCode>
+      <FileName>PowerOnSelfTest.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_instance" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
