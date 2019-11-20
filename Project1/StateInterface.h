@@ -1,20 +1,23 @@
 #pragma once
-#include "EmbeddedSystemX.h"
+#include <cstddef>
+
+class Context;
+
 class StateInterface
 {
 public:
-	virtual void Restart(EmbeddedSystemX* context) {}
-	virtual void SelfTestFailed(EmbeddedSystemX* context) {}
-	virtual void SelftestOk(EmbeddedSystemX* context) {}
-	virtual void Exit(EmbeddedSystemX* context) {}
-	virtual void Initalized(EmbeddedSystemX* context) {}
-	virtual void Configure(EmbeddedSystemX* context) {}
-	virtual void ConfigurationEnded(EmbeddedSystemX* context) {}
-	virtual void Start(EmbeddedSystemX* context) {}
-	virtual void Stop(EmbeddedSystemX* context) {}
-	virtual void Suspend(EmbeddedSystemX* context) {}
-	virtual void Resume(EmbeddedSystemX* context) {}
+	virtual void Restart(Context& context) {}
+	virtual void SelfTestFailed(Context& context) {}
+	virtual void SelftestOk(Context& context) {}
+	virtual void Exit(Context& context) {}
+	virtual void Initalized(Context& context) {}
+	virtual void Configure(Context& context) {}
+	virtual void ConfigurationEnded(Context& context) {}
+	virtual void Start(Context& context) {}
+	virtual void Stop(Context& context) {}
+	virtual void Suspend(Context& context) {}
+	virtual void Resume(Context& context) {}
 
 protected:
-	void ChangeState(EmbeddedSystemX* context, StateInterface* newState);
+	void ChangeState(Context& context, StateInterface* newState);
 };

@@ -1,31 +1,184 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
   <Class Name="EmbeddedSystemX">
-    <Position X="4" Y="0.5" Width="3.25" />
+    <Position X="16.25" Y="7" Width="1.75" />
+    <InheritanceLine Type="Context" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.25" Y="7.562" />
+        <Point X="13.625" Y="7.562" />
+        <Point X="13.625" Y="7.562" />
+        <Point X="16.25" Y="7.562" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>EAAAAAAAACAIBAAAAABACAAAAAAgAWAAIAAAAQgAAAA=</HashCode>
+      <HashCode>EAAAAAAAACAIAAAAAABAAAAAAAAgAWAAIAAAAQgAAAA=</HashCode>
       <FileName>EmbeddedSystemX.h</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="_state" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="StateInterface">
-    <Position X="8.25" Y="0.5" Width="4.75" />
+    <Position X="9.5" Y="9.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAACAIBAAAAABAAAAAAAAgASAAIAAAAQgAAAA=</HashCode>
       <FileName>StateInterface.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PowerOnSelfTest">
-    <Position X="9" Y="4.5" Width="3.5" />
+  <Class Name="PowerOnSelfTest" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="9.75" Width="2" />
+    <InheritanceLine Type="StateInterface" FixedToPoint="true">
+      <Path>
+        <Point X="11" Y="10.119" />
+        <Point X="11.75" Y="10.119" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="Singleton&lt;T&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="14.5" Y="10.119" />
+        <Point X="13.75" Y="10.119" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAEAAAAAAAAIAAAAAAAAAAAAAAAAQAAQAAAAQAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAQAAAAA=</HashCode>
       <FileName>PowerOnSelfTest.h</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="_instance" />
-    </ShowAsAssociation>
+  </Class>
+  <Class Name="Singleton&lt;T&gt;">
+    <Position X="14.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Singleton.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Failure" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="13.5" Width="1.5" />
+    <InheritanceLine Type="StateInterface" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="12.728" />
+        <Point X="10.25" Y="13.869" />
+        <Point X="11.75" Y="13.869" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="Singleton&lt;T&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="15.25" Y="10.805" />
+        <Point X="15.25" Y="13.869" />
+        <Point X="13.25" Y="13.869" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Failure.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Configuration" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="9" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configuration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Context" Collapsed="true">
+    <Position X="11.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Context.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Initializing" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Initializing.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Operational" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="8.25" Width="1.75" />
+    <InheritanceLine Type="StateInterface" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="9.25" />
+        <Point X="10.25" Y="8.614" />
+        <Point X="11.75" Y="8.614" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="Singleton&lt;T&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="15.25" Y="9.25" />
+        <Point X="15.25" Y="8.614" />
+        <Point X="13.5" Y="8.614" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="Context" FixedFromPoint="true">
+      <Path>
+        <Point X="12.625" Y="7.812" />
+        <Point X="12.625" Y="8.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>EAAAIAAAACAIAAAAAABAAAAAAAAAACAAIAAAAAgAAAA=</HashCode>
+      <FileName>Operational.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ready" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="12" Width="1.5" />
+    <InheritanceLine Type="StateInterface" FixedToPoint="true">
+      <Path>
+        <Point X="11" Y="12.421" />
+        <Point X="11.75" Y="12.421" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="Singleton&lt;T&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="15.25" Y="10.805" />
+        <Point X="15.25" Y="12.421" />
+        <Point X="13.25" Y="12.421" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ready.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RealTimeLoop" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="12.75" Width="1.75" />
+    <InheritanceLine Type="StateInterface" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="12.728" />
+        <Point X="10.25" Y="13.171" />
+        <Point X="11.75" Y="13.171" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="Singleton&lt;T&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="15.25" Y="10.805" />
+        <Point X="15.25" Y="13.171" />
+        <Point X="13.5" Y="13.171" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAIAAAAAAAAAA=</HashCode>
+      <FileName>RealTimeLoop.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Suspended" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="10.5" Width="1.5" />
+    <InheritanceLine Type="StateInterface" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11" Y="10.875" />
+        <Point X="11.375" Y="10.875" />
+        <Point X="11.375" Y="10.869" />
+        <Point X="11.75" Y="10.869" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="Singleton&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.25" Y="10.805" />
+        <Point X="15.25" Y="11" />
+        <Point X="13.25" Y="11" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAgAAAA=</HashCode>
+      <FileName>Suspended.h</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

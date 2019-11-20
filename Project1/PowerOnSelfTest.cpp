@@ -1,12 +1,13 @@
 #include "PowerOnSelfTest.h"
+#include "Failure.h"
+#include "Initializing.h"
 
-PowerOnSelfTest* PowerOnSelfTest::_instance = NULL;
-
-StateInterface* PowerOnSelfTest::Instance()
+void PowerOnSelfTest::SelfTestFailed(EmbeddedSystemX& context)
 {
-	if (_instance == NULL)
-	{
-		_instance = new PowerOnSelfTest();
-	}
-	return _instance;
+    ChangeState(context, Failure::GetInstance());
+}
+
+void PowerOnSelfTest::SelftestOk(EmbeddedSystemX& context) 
+{
+    ChangeState(context, Initializing::GetInstance());
 }

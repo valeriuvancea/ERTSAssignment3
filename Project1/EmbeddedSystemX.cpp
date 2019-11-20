@@ -3,65 +3,60 @@
 
 EmbeddedSystemX::EmbeddedSystemX()
 {
-	_state = PowerOnSelfTest::Instance();
+	_state = PowerOnSelfTest::GetInstance();
 }
 
 void EmbeddedSystemX::Restart()
 {
-	_state->Restart(this);
+	_state->Restart(*this);
 }
 
 void EmbeddedSystemX::SelfTestFailed()
 {
-	_state->SelfTestFailed(this);
+	_state->SelfTestFailed(*this);
 }
 
 void EmbeddedSystemX::SelftestOk()
 {
-	_state->SelftestOk(this);
+	_state->SelftestOk(*this);
 }
 
 void EmbeddedSystemX::Exit()
 {
-	_state->Exit(this);
+	_state->Exit(*this);
 }
 
 void EmbeddedSystemX::Initalized()
 {
-	_state->Initalized(this);
+	_state->Initalized(*this);
 }
 
 void EmbeddedSystemX::Configure()
 {
-	_state->Configure(this);
+	_state->Configure(*this);
 }
 
 void EmbeddedSystemX::ConfigurationEnded()
 {
-	_state->ConfigurationEnded(this);
+	_state->ConfigurationEnded(*this);
 }
 
 void EmbeddedSystemX::Start()
 {
-	_state->Start(this);
+	_state->Start(*this);
 }
 
 void EmbeddedSystemX::Stop()
 {
-	_state->Stop(this);
+	_state->Stop(*this);
 }
 
 void EmbeddedSystemX::Suspend()
 {
-	_state->Suspend(this);
+	_state->Suspend(*this);
 }
 
 void EmbeddedSystemX::Resume()
 {
-	_state->Resume(this);
-}
-
-void EmbeddedSystemX::ChangeState(StateInterface* newState)
-{
-	_state = newState;
+	_state->Resume(*this);
 }
