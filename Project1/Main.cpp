@@ -1,5 +1,6 @@
 #include "EmbeddedSystemX.h"
 #include <iostream>
+#include "SimpleCommand.h"
 
 
 enum Event
@@ -36,6 +37,8 @@ int readEventCode()
 int main()
 {
     EmbeddedSystemX systemX;
+    auto so = SimpleCommand([&systemX]() { systemX.Exit(); });
+    so.Execute();
 
     while (true)
     {
