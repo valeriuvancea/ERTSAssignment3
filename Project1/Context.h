@@ -1,5 +1,6 @@
 #pragma once
 #include "StateInterface.h"
+#include <string>
 
 class Context
 {
@@ -8,5 +9,6 @@ protected:
 
 public:
     void ChangeState(StateInterface* newState);
+    std::string GetCurrentStateName();
 };
 

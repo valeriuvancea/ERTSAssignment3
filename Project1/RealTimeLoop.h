@@ -1,9 +1,9 @@
 #pragma once
 #include "StateInterface.h"
 #include "EmbeddedSystemX.h"
-#include "Singleton.h"
+#include "SingletonState.h"
 
-class RealTimeLoop : public StateInterface, public Singleton<RealTimeLoop>
+class RealTimeLoop : public SingletonState<RealTimeLoop>
 {
     void Stop(Context& context);
     void Suspend(Context& context);

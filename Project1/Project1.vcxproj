@@ -146,7 +146,7 @@
     <ClInclude Include="PowerOnSelfTest.h" />
     <ClInclude Include="Ready.h" />
     <ClInclude Include="RealTimeLoop.h" />
-    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="SingletonState.h" />
     <ClInclude Include="StateInterface.h" />
     <ClInclude Include="Suspended.h" />
   </ItemGroup>

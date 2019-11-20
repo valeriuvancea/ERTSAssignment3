@@ -1,9 +1,9 @@
 #pragma once
 #include "StateInterface.h"
 #include "Context.h"
-#include "Singleton.h"
+#include "SingletonState.h"
 
-class Operational : public StateInterface, public Singleton<Operational>, public Context
+class Operational : public SingletonState<Operational>, public Context
 {
 public:
     Operational();

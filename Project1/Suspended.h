@@ -1,9 +1,9 @@
 #pragma once
 #include "StateInterface.h"
 #include "EmbeddedSystemX.h"
-#include "Singleton.h"
+#include "SingletonState.h"
 
-class Suspended : public StateInterface, public Singleton<Suspended> 
+class Suspended : public SingletonState<Suspended> 
 {
     void Stop(Context& context);
     void Resume(Context& context);

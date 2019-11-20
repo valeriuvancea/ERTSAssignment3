@@ -1,11 +1,11 @@
 #pragma once
 #include "StateInterface.h"
 #include "EmbeddedSystemX.h"
-#include "Singleton.h"
+#include "SingletonState.h"
 
-class Initializing : public StateInterface, public Singleton<Initializing>
+class Initializing : public SingletonState<Initializing>
 {
 public:
-    void Initalized(EmbeddedSystemX& context);
+    void Initalized(Context& context);
 };
 

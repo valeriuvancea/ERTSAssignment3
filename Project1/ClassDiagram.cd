@@ -1,13 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
   <Class Name="EmbeddedSystemX">
-    <Position X="16.25" Y="7" Width="1.75" />
+    <Position X="10.75" Y="8" Width="1.75" />
     <InheritanceLine Type="Context" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="13.25" Y="7.562" />
-        <Point X="13.625" Y="7.562" />
-        <Point X="13.625" Y="7.562" />
-        <Point X="16.25" Y="7.562" />
+        <Point X="12.5" Y="7.312" />
+        <Point X="11.562" Y="7.312" />
+        <Point X="11.562" Y="8" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -16,24 +15,20 @@
     </TypeIdentifier>
   </Class>
   <Class Name="StateInterface">
-    <Position X="9.5" Y="9.25" Width="1.5" />
+    <Position X="15.25" Y="7.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAAAAACAIBAAAAABAAAAAAAAgASAAIAAAAQgAAAA=</HashCode>
+      <HashCode>EAAAAAAAACAIBAAAAABAAAAAAAAgASAAIAAAAQgAAQA=</HashCode>
       <FileName>StateInterface.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PowerOnSelfTest" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="11.75" Y="9.75" Width="2" />
-    <InheritanceLine Type="StateInterface" FixedToPoint="true">
+    <Position X="10.75" Y="12" Width="2" />
+    <InheritanceLine Type="SingletonState&lt;T&gt;" ManuallyRouted="true">
       <Path>
-        <Point X="11" Y="10.119" />
-        <Point X="11.75" Y="10.119" />
-      </Path>
-    </InheritanceLine>
-    <InheritanceLine Type="Singleton&lt;T&gt;" FixedToPoint="true">
-      <Path>
-        <Point X="14.5" Y="10.119" />
-        <Point X="13.75" Y="10.119" />
+        <Point X="13.625" Y="11.377" />
+        <Point X="13.625" Y="11.809" />
+        <Point X="11.75" Y="11.809" />
+        <Point X="11.75" Y="12" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -41,75 +36,65 @@
       <FileName>PowerOnSelfTest.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Singleton&lt;T&gt;">
-    <Position X="14.5" Y="9.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Singleton.h</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Failure" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="11.75" Y="13.5" Width="1.5" />
-    <InheritanceLine Type="StateInterface" FixedToPoint="true">
-      <Path>
-        <Point X="10.25" Y="12.728" />
-        <Point X="10.25" Y="13.869" />
-        <Point X="11.75" Y="13.869" />
-      </Path>
-    </InheritanceLine>
-    <InheritanceLine Type="Singleton&lt;T&gt;" FixedToPoint="true">
-      <Path>
-        <Point X="15.25" Y="10.805" />
-        <Point X="15.25" Y="13.869" />
-        <Point X="13.25" Y="13.869" />
-      </Path>
-    </InheritanceLine>
+    <Position X="10.75" Y="13.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
       <FileName>Failure.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Configuration" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="11.75" Y="9" Width="1.75" />
+    <Position X="10.75" Y="14.25" Width="1.75" />
+    <InheritanceLine Type="SingletonState&lt;T&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="13.625" Y="11.377" />
+        <Point X="13.625" Y="11.817" />
+        <Point X="13.05" Y="11.817" />
+        <Point X="13.05" Y="14.096" />
+        <Point X="11.625" Y="14.096" />
+        <Point X="11.625" Y="14.25" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Configuration.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Context" Collapsed="true">
-    <Position X="11.75" Y="7.25" Width="1.5" />
+    <Position X="12.5" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAABAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAABAAAAAAACAAAAAAAAAAAAAAAACAAAAA=</HashCode>
       <FileName>Context.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Initializing" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="11.75" Y="11.25" Width="1.5" />
+    <Position X="15.25" Y="12" Width="1.5" />
+    <InheritanceLine Type="SingletonState&lt;T&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="13.625" Y="11.377" />
+        <Point X="13.625" Y="11.809" />
+        <Point X="16" Y="11.809" />
+        <Point X="16" Y="12" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Initializing.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Operational" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="11.75" Y="8.25" Width="1.75" />
-    <InheritanceLine Type="StateInterface" FixedToPoint="true">
+  <Class Name="Operational" Collapsed="true">
+    <Position X="13" Y="8" Width="1.75" />
+    <InheritanceLine Type="SingletonState&lt;T&gt;" FixedFromPoint="true">
       <Path>
-        <Point X="10.25" Y="9.25" />
-        <Point X="10.25" Y="8.614" />
-        <Point X="11.75" Y="8.614" />
+        <Point X="13.875" Y="9.5" />
+        <Point X="13.875" Y="8.82" />
       </Path>
     </InheritanceLine>
-    <InheritanceLine Type="Singleton&lt;T&gt;" FixedToPoint="true">
+    <InheritanceLine Type="Context" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="15.25" Y="9.25" />
-        <Point X="15.25" Y="8.614" />
-        <Point X="13.5" Y="8.614" />
-      </Path>
-    </InheritanceLine>
-    <InheritanceLine Type="Context" FixedFromPoint="true">
-      <Path>
-        <Point X="12.625" Y="7.812" />
-        <Point X="12.625" Y="8.25" />
+        <Point X="14" Y="7.312" />
+        <Point X="14.5" Y="7.312" />
+        <Point X="14.5" Y="8" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -118,66 +103,40 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Ready" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="11.75" Y="12" Width="1.5" />
-    <InheritanceLine Type="StateInterface" FixedToPoint="true">
-      <Path>
-        <Point X="11" Y="12.421" />
-        <Point X="11.75" Y="12.421" />
-      </Path>
-    </InheritanceLine>
-    <InheritanceLine Type="Singleton&lt;T&gt;" FixedToPoint="true">
-      <Path>
-        <Point X="15.25" Y="10.805" />
-        <Point X="15.25" Y="12.421" />
-        <Point X="13.25" Y="12.421" />
-      </Path>
-    </InheritanceLine>
+    <Position X="15.25" Y="13.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Ready.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RealTimeLoop" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="11.75" Y="12.75" Width="1.75" />
-    <InheritanceLine Type="StateInterface" FixedToPoint="true">
-      <Path>
-        <Point X="10.25" Y="12.728" />
-        <Point X="10.25" Y="13.171" />
-        <Point X="11.75" Y="13.171" />
-      </Path>
-    </InheritanceLine>
-    <InheritanceLine Type="Singleton&lt;T&gt;" FixedToPoint="true">
-      <Path>
-        <Point X="15.25" Y="10.805" />
-        <Point X="15.25" Y="13.171" />
-        <Point X="13.5" Y="13.171" />
-      </Path>
-    </InheritanceLine>
+    <Position X="13.25" Y="13.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAIAAAAAAAAAA=</HashCode>
       <FileName>RealTimeLoop.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Suspended" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="11.75" Y="10.5" Width="1.5" />
-    <InheritanceLine Type="StateInterface" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+    <Position X="13.25" Y="12" Width="1.5" />
+    <InheritanceLine Type="SingletonState&lt;T&gt;" FixedToPoint="true">
       <Path>
-        <Point X="11" Y="10.875" />
-        <Point X="11.375" Y="10.875" />
-        <Point X="11.375" Y="10.869" />
-        <Point X="11.75" Y="10.869" />
+        <Point X="13.625" Y="11.377" />
+        <Point X="13.625" Y="12" />
       </Path>
-    </InheritanceLine>
-    <InheritanceLine Type="Singleton&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="15.25" Y="10.805" />
-        <Point X="15.25" Y="11" />
-        <Point X="13.25" Y="11" />
-      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.02" Y="0.06" Height="0.182" Width="0.5" />
+      </InheritanceModifierLabel>
     </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAgAAAA=</HashCode>
       <FileName>Suspended.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SingletonState&lt;T&gt;">
+    <Position X="12.75" Y="9.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>SingletonState.h</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

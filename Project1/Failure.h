@@ -1,11 +1,11 @@
 #pragma once
 #include "StateInterface.h"
 #include "EmbeddedSystemX.h"
-#include "Singleton.h"
+#include "SingletonState.h"
 
-class Failure : public StateInterface, public Singleton<Failure>
+class Failure : public SingletonState<Failure>
 {
 public:
-    void Exit(EmbeddedSystemX& context);
-    void Restart(EmbeddedSystemX& context);
+    void Exit(Context& context);
+    void Restart(Context& context);
 };

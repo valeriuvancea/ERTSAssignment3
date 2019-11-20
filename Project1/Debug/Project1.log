@@ -1,10 +1,2 @@
-﻿  Context.cpp
-  EmbeddedSystemX.cpp
-  Failure.cpp
-  Initializing.cpp
-  Main.cpp
-  Operational.cpp
-  PowerOnSelfTest.cpp
-  StateInterface.cpp
-  Generating Code...
+﻿  Main.cpp
   Project1.vcxproj -> C:\Users\Laurynas\Documents\ERTSAssignment3\Debug\Project1.exe

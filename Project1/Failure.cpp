@@ -2,12 +2,12 @@
 #include "Failure.h"
 #include "PowerOnSelfTest.h"
 
-void Failure::Exit(EmbeddedSystemX& context)
+void Failure::Exit(Context& context)
 {
     exit(0);
 }
 
-void Failure::Restart(EmbeddedSystemX& context)
+void Failure::Restart(Context& context)
 {
     ChangeState(context, PowerOnSelfTest::GetInstance());
 }
