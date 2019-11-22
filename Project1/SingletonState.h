@@ -17,6 +17,11 @@ public:
         return _instance;
     }
 
+    ~SingletonState()
+    {
+        delete _instance;
+    }
+
     std::string GetStateName()
     {
         std::string name = typeid(_instance).name();
@@ -25,5 +30,6 @@ public:
         return name;
     }
 };
+
 template <typename T>
 T* SingletonState<T>::_instance = NULL;
