@@ -10,6 +10,7 @@ Operational::Operational()
 void Operational::Restart(Context& context)
 {
     StateInterface::ChangeState(context, PowerOnSelfTest::GetInstance());
+    _state = Ready::GetInstance();
 }
 
 void Operational::Configure(Context& context)

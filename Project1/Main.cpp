@@ -1,7 +1,5 @@
 #include "EmbeddedSystemX.h"
 #include <iostream>
-#include "SimpleCommand.h"
-
 
 enum Event
 {
@@ -19,11 +17,11 @@ enum Event
     Start
 };
 
-
 int readEventCode()
 {
     std::string lineRead;
-    char* pEnd = new char(0);
+    char* pEnd = (char*)lineRead.c_str();
+
     std::getline(std::cin, lineRead);
     int eventCode = std::strtol(lineRead.c_str(), &pEnd, 10);
 
@@ -37,8 +35,6 @@ int readEventCode()
 int main()
 {
     EmbeddedSystemX systemX;
-    auto so = SimpleCommand([&systemX]() { systemX.Exit(); });
-    so.Execute();
 
     while (true)
     {

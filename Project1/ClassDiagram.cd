@@ -83,18 +83,18 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Operational" Collapsed="true">
-    <Position X="13" Y="8" Width="1.75" />
+    <Position X="12.75" Y="8" Width="1.75" />
     <InheritanceLine Type="SingletonState&lt;T&gt;" FixedFromPoint="true">
       <Path>
-        <Point X="13.875" Y="9.5" />
-        <Point X="13.875" Y="8.82" />
+        <Point X="13.625" Y="9.5" />
+        <Point X="13.625" Y="8.82" />
       </Path>
     </InheritanceLine>
     <InheritanceLine Type="Context" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="14" Y="7.312" />
-        <Point X="14.5" Y="7.312" />
-        <Point X="14.5" Y="8" />
+        <Point X="14.25" Y="7.312" />
+        <Point X="14.25" Y="8" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
