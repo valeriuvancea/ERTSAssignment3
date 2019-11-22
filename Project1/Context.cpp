@@ -1,8 +1,11 @@
 #include "Context.h"
 #include <typeinfo>
+#include <thread>
+#include <chrono>
 
 void Context::ChangeState(StateInterface* newState)
 {
+    std::this_thread::sleep_for(std::chrono::seconds(1));
     _state = newState;
 }
 
