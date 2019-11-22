@@ -1,4 +1,6 @@
 #include "EmbeddedSystemX.h"
+#include "Invoker.h"
+#include "ThreadSafeQueue.h"
 #include <iostream>
 
 enum Event
@@ -35,6 +37,11 @@ int readEventCode()
 int main()
 {
     EmbeddedSystemX systemX;
+    ThreadSafeQueue<Command> commandQueue;
+    Invoker commandInvoker(commandQueue);
+
+    commandInvoker.Start();
+    commandQueue.push(Command());
 
     while (true)
     {

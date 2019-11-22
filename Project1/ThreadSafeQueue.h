@@ -11,7 +11,24 @@ private:
     std::queue<T> _queue;
 
 public:
-    bool pop(T& element);
-    void push(const T& element);
+    bool pop(T& element)
+    {
+        std::lock_guard<std::mutex> lck(_mutex);
+
+        if (_queue.empty()) {
+            return false;
+        }
+
+        element = _queue.front();
+        _queue.pop();
+
+        return true;
+    }
+
+    void push(const T& element)
+    {
+        std::lock_guard<std::mutex> lck(_mutex);
+        _queue.push(element);
+    }
 };
 
